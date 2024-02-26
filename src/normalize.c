@@ -23,5 +23,5 @@ void	normalize(t_push_swap *s)
 		s->pile_a[i] = ((s->int_a - 1) - count);
 		i++;
 	}
-	free (s->tmp);
+	free(s->tmp);
 }

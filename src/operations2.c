@@ -39,6 +39,6 @@ void	rotate_a_b(t_push_swap *s)
 	s->counter = 1;
 	rotate_a(s);
 	rotate_b(s);
-	printf("rr\n");
+	ft_printf("rr\n");
 	s->counter = 0;
 }

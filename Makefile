@@ -17,7 +17,7 @@ LIB = mylibs.a
 all: $(LIBDIR)/$(LIB) $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CFLAGS) -o $(EXEC) $(OBJ) -L$(LIBDIR)/libft -lft
+	$(CC) $(CFLAGS) -o $(EXEC) $(OBJ) -L$(LIBDIR)/libft -lft -L$(LIBDIR)/ft_printf ./$(LIBDIR)/ft_printf/libftprintf.a
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	mkdir -p $(@D)
