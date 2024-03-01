@@ -7,7 +7,6 @@ void	two_args_init(t_push_swap *ps, char **argv)
 		error();
 	while (ps->arguments[ps->int_a])
 	{
-		ps->counter = 0;
 		check_non_num(ps->arguments[ps->int_a]);
 		ps->int_a++;
 	}
@@ -42,6 +41,7 @@ int	main(int argc, char **argv)
 	ps.int_a = 0;
 	ps.int_b = 0;
 	ps.i = 0;
+	ps.counter = 0;
 	if (argc > 1)
 	{
 		if (argc == 2)
